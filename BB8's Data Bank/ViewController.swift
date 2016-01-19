@@ -122,6 +122,16 @@ class ViewController: UIViewController {
            updatePlanet()
         
     }
+    
+    
+    
+    @IBAction func returnToMain(sender: AnyObject) {
+        
+        dismissViewControllerAnimated(true, completion: nil)
+        
+    }
+    
+    
 
     
 //
