@@ -16,7 +16,8 @@ class PeopleViewController: UIViewController {
     @IBOutlet weak var genderLbl: UILabel!
     @IBOutlet weak var eyecolorLbl: UILabel!
     @IBOutlet weak var heightLbl: UILabel!
-    
+    @IBOutlet weak var starshipLbl: UILabel!
+    @IBOutlet weak var speciesLbl: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,14 +44,14 @@ class PeopleViewController: UIViewController {
         
         
         session.dataTaskWithURL(url, completionHandler: { ( data: NSData?, response: NSURLResponse?, error: NSError?) -> Void in
-            // Make sure we get an OK response
+            
             guard let realResponse = response as? NSHTTPURLResponse where
                 realResponse.statusCode == 200 else {
                     print("Not a 200 response")
                     return
             }
             
-            // Read the JSON
+           
             dispatch_async(dispatch_get_main_queue(), {
                 
                 do {
@@ -71,8 +72,7 @@ class PeopleViewController: UIViewController {
                         if  let genderType = jsonDictionary["gender"] as? String {
                             
                             self.genderLbl.text = genderType
-                            print(genderType)
-                        }
+                            print(genderType)                             }
                         if  let height = jsonDictionary["height"] as? String {
                             
                             self.heightLbl.text = height
@@ -83,7 +83,18 @@ class PeopleViewController: UIViewController {
                             self.eyecolorLbl.text = eyeColor
                             print(eyeColor)
                         }
-              
+                        if  let species = jsonDictionary["species"] as? NSArray {
+                            
+                            //self.speciesLbl.text = species
+                            print(species)
+                        }
+                        if  let starship = jsonDictionary["starships"] as? NSArray {
+            
+                            
+                            //self.starshipLbl.text = starship
+                            print(starship)
+                        }
+
                         
                         
                     }
@@ -110,5 +121,47 @@ class PeopleViewController: UIViewController {
         dismissViewControllerAnimated(true, completion: nil)
         
     }
-   
+    
+   /* func processNewData(data: NSArray) {
+        
+        
+        let people = "http://swapi.co/api/people/1" //+ number
+        let session = NSURLSession.sharedSession()
+        let url = NSURL(string: people)!
+        
+        
+        session.dataTaskWithURL(url, completionHandler: { ( data: NSData?, response: NSURLResponse?, error: NSError?) -> Void in
+            // Make sure we get an OK response
+            guard let realResponse = response as? NSHTTPURLResponse where
+                realResponse.statusCode == 200 else {
+                    print("Not a 200 response")
+                    return
+            }
+            
+            // Read the JSON
+            dispatch_async(dispatch_get_main_queue(), {
+                
+                do {
+
+        
+        
+        
+        
+        
+        for ship in data {
+            
+             let shipData = NSURL(string: ship)
+            
+        }
+        
+        
+    }
+    
+*/
+//
+//
+//
+
 }
+
+
