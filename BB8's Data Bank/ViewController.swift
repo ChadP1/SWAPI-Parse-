@@ -51,17 +51,17 @@ class ViewController: UIViewController {
                     return
             }
             
-            // Read the JSON
+            
             dispatch_async(dispatch_get_main_queue(), {
 
             do {
                 
                 
                 if let info = NSString(data:data!, encoding: NSUTF8StringEncoding) {
-                    // Print what we got from the call
+                    
                     print(info)
                     
-                    // Parse the JSON to get the info
+                    
                     let jsonDictionary = try NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.MutableContainers) as! NSDictionary
                     
                     if  let planets = jsonDictionary["name"] as? String {

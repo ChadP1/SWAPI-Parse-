@@ -22,21 +22,15 @@ class PeopleViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
         updatePlanet()
-        
         
     }
     
     
-    
     func updatePlanet() {
-        
         
         let diceRoll = Int(arc4random_uniform(UInt32(61)))
         let number = String(diceRoll)
-        
-        
         
         let people = "http://swapi.co/api/people/" + number
         let session = NSURLSession.sharedSession()
@@ -56,12 +50,7 @@ class PeopleViewController: UIViewController {
                 
                 do {
                     
-                    
-                    if let info = NSString(data:data!, encoding: NSUTF8StringEncoding) {
-                        // Print what we got from the call
-                        print(info)
                         
-                        // Parse the JSON to get the info
                         let jsonDictionary = try NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.MutableContainers) as! NSDictionary
                         
                         if  let name = jsonDictionary["name"] as? String {
@@ -95,12 +84,6 @@ class PeopleViewController: UIViewController {
                             print(starship)
                         }
 
-                        
-                        
-                    }
-                    
-                    
-                    
                     
                 } catch {
                     print("These aren't the droids your looking for")

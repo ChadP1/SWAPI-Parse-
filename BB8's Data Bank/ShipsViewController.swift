@@ -33,14 +33,19 @@ class ShipsViewController: UIViewController {
     
 
 
-    func populateLabels(){
+    func populateLabels() {
         
       let diceRoll = Int(arc4random_uniform(UInt32(37)))
       let diceRollNum = String(diceRoll)
         
-      let ships = "http://swapi.co/api/starships/ " + diceRollNum
+        
+      let ships = "http://swapi.co/api/starships/" + diceRollNum
       let session = NSURLSession.sharedSession()
+        print(ships)
       let url = NSURL(string: ships)!
+        
+        
+        
         
         session.dataTaskWithURL(url, completionHandler: { (data: NSData?, response: NSURLResponse?, error: NSError?) -> Void in
             guard let realResponse = response as? NSHTTPURLResponse where
