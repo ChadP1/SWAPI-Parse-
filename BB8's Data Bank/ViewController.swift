@@ -47,6 +47,7 @@ class ViewController: UIViewController {
             // Make sure we get an OK response
             guard let realResponse = response as? NSHTTPURLResponse where
                 realResponse.statusCode == 200 else {
+                    self.updatePlanet()
                     print("Not a 200 response")
                     return
             }

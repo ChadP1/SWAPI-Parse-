@@ -15,9 +15,16 @@ class PeopleViewController: UIViewController {
     @IBOutlet weak var nameLbl: UILabel!
     @IBOutlet weak var genderLbl: UILabel!
     @IBOutlet weak var eyecolorLbl: UILabel!
-    @IBOutlet weak var heightLbl: UILabel!
     @IBOutlet weak var starshipLbl: UILabel!
     @IBOutlet weak var speciesLbl: UILabel!
+    @IBOutlet weak var hLbl: UILabel!
+    @IBOutlet weak var heightLbl: UILabel!
+  
+    
+    
+    
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +39,7 @@ class PeopleViewController: UIViewController {
         let diceRoll = Int(arc4random_uniform(UInt32(61)))
         let number = String(diceRoll)
         
-        let people = "http://swapi.co/api/people/" + number
+        let people = "http://swapi.co/api/people/1" + number
         let session = NSURLSession.sharedSession()
         let url = NSURL(string: people)!
         
@@ -41,7 +48,7 @@ class PeopleViewController: UIViewController {
             
             guard let realResponse = response as? NSHTTPURLResponse where
                 realResponse.statusCode == 200 else {
-                    print("Not a 200 response")
+                   self.updatePlanet()
                     return
             }
             
@@ -72,17 +79,20 @@ class PeopleViewController: UIViewController {
                             self.eyecolorLbl.text = eyeColor
                             print(eyeColor)
                         }
-                        if  let species = jsonDictionary["species"] as? NSArray {
+                        if  let bYear = jsonDictionary["birth_year"] as? String {
                             
-                            //self.speciesLbl.text = species
-                            print(species)
+                            self.speciesLbl.text = bYear
+                            
                         }
-                        if  let starship = jsonDictionary["starships"] as? NSArray {
+                        if  let mass = jsonDictionary["mass"] as? String {
             
-                            
-                            //self.starshipLbl.text = starship
-                            print(starship)
+                            self.starshipLbl.text = mass
                         }
+                    if  let hair = jsonDictionary["hair_color"] as? String {
+                        
+                        self.hLbl.text = hair
+                    }
+
 
                     
                 } catch {
@@ -105,14 +115,20 @@ class PeopleViewController: UIViewController {
         
     }
     
-   /* func processNewData(data: NSArray) {
+  func processNewData(location: NSArray) {
+    var newUrl: AnyObject?
+    
+    for i in location {
         
+         newUrl = i
         
-        let people = "http://swapi.co/api/people/1" //+ number
+    }
+    
         let session = NSURLSession.sharedSession()
-        let url = NSURL(string: people)!
-        
-        
+        let url = NSURL(string: newUrl as! String)!
+        print(url)
+        print("1")
+    
         session.dataTaskWithURL(url, completionHandler: { ( data: NSData?, response: NSURLResponse?, error: NSError?) -> Void in
             // Make sure we get an OK response
             guard let realResponse = response as? NSHTTPURLResponse where
@@ -120,31 +136,60 @@ class PeopleViewController: UIViewController {
                     print("Not a 200 response")
                     return
             }
-            
+             print("2")
             // Read the JSON
             dispatch_async(dispatch_get_main_queue(), {
                 
                 do {
+                    print("3")
+                    let jsonDictionary = try NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.MutableContainers) as! NSDictionary
 
-        
-        
-        
-        
-        
-        for ship in data {
+                         print("4")
+                    if let nameP = jsonDictionary["name"] as? String {
+                      
+                         self.speciesLbl.text = nameP
+                         self.starshipLbl.text = nameP
+                        
+                    }
+                    
+                    
+                    
+                    
+                    
+                   } catch {
+                    print("He's no good to me dead")
+                }
+            })
             
-             let shipData = NSURL(string: ship)
-            
-        }
-        
-        
-    }
+         })
+    //}
     
-*/
+}
+
 //
 //
 //
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

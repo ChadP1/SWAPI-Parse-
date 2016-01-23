@@ -51,6 +51,7 @@ class VehicleViewController: UIViewController {
         session.dataTaskWithURL(url, completionHandler: { (data: NSData?, response: NSURLResponse?, error: NSError?) -> Void in
             guard let realResponse = response as? NSHTTPURLResponse where
                 realResponse.statusCode == 200 else {
+                    self.populateLabels()
                     print("NOt a 200 response")
                     return
             }
