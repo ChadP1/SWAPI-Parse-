@@ -5,6 +5,93 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
+        <!--Wookie View Controller-->
+        <scene sceneID="lg1-Zv-la3">
+            <objects>
+                <viewController id="kvN-86-8eR" customClass="WookieViewController" customModule="BB8_s_Data_Bank" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wEh-hM-bkq"/>
+                        <viewControllerLayoutGuide type="bottom" id="6Dv-GT-TCr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GiV-ML-dXX">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="54" translatesAutoresizingMaskIntoConstraints="NO" id="F0u-iO-Rfv">
+                                <rect key="frame" x="162" y="182" width="277" height="236"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ZH0-yA-UjP">
+                                        <rect key="frame" x="0.0" y="0.0" width="277" height="112"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Whrascwo:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hkx-db-Avd">
+                                                <rect key="frame" x="96" y="0.0" width="85.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="one" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UEW-jB-ppd">
+                                                <rect key="frame" x="123" y="30" width="30.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rcooaoraaoahoowh Akworcahoowa:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g69-B6-knu">
+                                                <rect key="frame" x="0.0" y="61" width="277" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="two" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yUH-f9-dO1">
+                                                <rect key="frame" x="123" y="91" width="30.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="s1d-Oo-qjl">
+                                        <rect key="frame" x="8" y="166" width="261" height="70"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9WS-Vk-pWs">
+                                                <rect key="frame" x="0.0" y="0.0" width="261" height="35"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                <state key="normal" title="Access new wookie translation">
+                                                    <color key="titleColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="newWookieButton:" destination="kvN-86-8eR" eventType="touchUpInside" id="bO7-MS-iCI"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lpr-bN-41a">
+                                                <rect key="frame" x="1" y="35" width="258" height="35"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                <state key="normal" title="Return to main data repository">
+                                                    <color key="titleColor" red="1" green="0.50196081400000003" blue="0.0" alpha="0.74593538849999996" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="returnToMain:" destination="kvN-86-8eR" eventType="touchUpInside" id="Wng-o4-PNe"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="F0u-iO-Rfv" firstAttribute="centerY" secondItem="GiV-ML-dXX" secondAttribute="centerY" id="Bvq-DG-DP7"/>
+                            <constraint firstItem="F0u-iO-Rfv" firstAttribute="centerX" secondItem="GiV-ML-dXX" secondAttribute="centerX" id="nRs-4D-4f9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="one" destination="UEW-jB-ppd" id="3yu-kU-Sx6"/>
+                        <outlet property="teoLbl" destination="yUH-f9-dO1" id="UPU-eZ-Xm2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fDG-OU-hn9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-996" y="153"/>
+        </scene>
         <!--Ships View Controller-->
         <scene sceneID="uEs-Cq-4pW">
             <objects>
@@ -247,13 +334,24 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6mM-uG-Xf2">
+                                <rect key="frame" x="275" y="28" width="51" height="30"/>
+                                <state key="normal" title="Wookie">
+                                    <color key="titleColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="kvN-86-8eR" kind="presentation" id="DG3-Ha-ENv"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="F43-0f-HC7" firstAttribute="centerY" secondItem="oME-bt-fvt" secondAttribute="centerY" constant="139" id="8ae-e3-6S4"/>
                             <constraint firstItem="F43-0f-HC7" firstAttribute="centerX" secondItem="oME-bt-fvt" secondAttribute="centerX" constant="-5" id="BmR-bP-epA"/>
+                            <constraint firstItem="6mM-uG-Xf2" firstAttribute="centerX" secondItem="oME-bt-fvt" secondAttribute="centerX" id="CDl-Qz-JbC"/>
                             <constraint firstItem="V9a-H7-O4r" firstAttribute="centerX" secondItem="oME-bt-fvt" secondAttribute="centerX" constant="-4.5" id="e6H-1y-M9T"/>
                             <constraint firstItem="V9a-H7-O4r" firstAttribute="centerY" secondItem="oME-bt-fvt" secondAttribute="centerY" constant="-115.5" id="eI4-ef-44y"/>
+                            <constraint firstItem="6mM-uG-Xf2" firstAttribute="top" secondItem="rhq-kL-PbB" secondAttribute="bottom" constant="8" symbolic="YES" id="qEM-XB-x0M"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -874,7 +972,7 @@
                                                     <color key="titleColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="newShipButton:" destination="rbR-Wc-bJ9" eventType="touchUpInside" id="AhF-Qb-Zqo"/>
+                                                    <action selector="newShipButton:" destination="rbR-Wc-bJ9" eventType="touchUpInside" id="Z7V-18-yqa"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OBr-hx-0xE">
@@ -884,7 +982,7 @@
                                                     <color key="titleColor" red="1" green="0.50196081400000003" blue="0.0" alpha="0.74593538849999996" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="newShipButton:" destination="rbR-Wc-bJ9" eventType="touchUpInside" id="F7T-Ax-ten"/>
+                                                    <action selector="returnToMain:" destination="rbR-Wc-bJ9" eventType="touchUpInside" id="vOt-Pp-UD4"/>
                                                 </connections>
                                             </button>
                                         </subviews>
