@@ -9,7 +9,7 @@
 import UIKit
 import GameplayKit
 
-class ViewController: UIViewController {
+class PlanetViewController: UIViewController {
     
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var rotationPeriod: UILabel!

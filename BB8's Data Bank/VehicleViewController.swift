@@ -25,14 +25,13 @@ class VehicleViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        populateLabels()
+       // populateLabels()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        populateLabels()
     }
-    
 
     func populateLabels() {
         
@@ -59,11 +58,6 @@ class VehicleViewController: UIViewController {
             dispatch_async(dispatch_get_main_queue(), {
                 
                 do {
-                    
-                    if let info = NSString(data:data!, encoding: NSUTF8StringEncoding) {
-                        // Print what we got from the call
-                        print(info)
-                        
                         
                         let json = try NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.MutableContainers) as! NSDictionary
                         
@@ -109,7 +103,7 @@ class VehicleViewController: UIViewController {
                         }
 
                         
-                    }
+                    
                     
                 } catch {
                     print("You want to go home and rethink your life")

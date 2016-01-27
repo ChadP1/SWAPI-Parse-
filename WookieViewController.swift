@@ -12,6 +12,9 @@ class WookieViewController: UIViewController {
     
     
 
+    @IBOutlet weak var fiveLbl: UILabel!
+    @IBOutlet weak var fourLbl: UILabel!
+    @IBOutlet weak var threeLbl: UILabel!
     @IBOutlet weak var teoLbl: UILabel!
     @IBOutlet weak var one: UILabel!
     
@@ -34,7 +37,7 @@ class WookieViewController: UIViewController {
         let diceRollNum = String(diceRoll)
         
         
-        let wookie = "https://swapi.co/api/planets/" + diceRollNum + "/?format=wookiee"
+        let wookie = "https://swapi.co/api/people/" + diceRollNum + "/?format=wookiee"
         let session = NSURLSession.sharedSession()
         print(wookie)
         let url = NSURL(string: wookie)!
@@ -66,13 +69,25 @@ class WookieViewController: UIViewController {
                             self.one.text = first
                             print(first)
                         }
-                        if  let two = json["rcooaoraaoahoowh_akworcahoowa"] as? String {
+                        if  let two = json["acraahrc_oaooanoorc"] as? String {
                             
                             self.teoLbl.text = two
                             print(two)
                         }
-            
-                        
+                        if  let three = json["acraahrc_oaooanoorc"] as? String {
+                            
+                            self.threeLbl.text = three
+                            print(three)
+                        }
+                        if let four = json["corahwh_oaooanoorc"] as? String {
+                            self.fourLbl.text = four
+                            print(four)
+                        }
+                        if let five = json["rrwowhwaworc"] as? String {
+                            self.fiveLbl.text = five
+                            print(five)
+                            
+                        }
                         
                     }
                     

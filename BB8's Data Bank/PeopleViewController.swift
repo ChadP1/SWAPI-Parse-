@@ -29,12 +29,12 @@ class PeopleViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        updatePlanet()
+        updatePeople()
         
     }
     
     
-    func updatePlanet() {
+    func updatePeople() {
         
         let diceRoll = Int(arc4random_uniform(UInt32(61)))
         let number = String(diceRoll)
@@ -48,7 +48,7 @@ class PeopleViewController: UIViewController {
             
             guard let realResponse = response as? NSHTTPURLResponse where
                 realResponse.statusCode == 200 else {
-                   self.updatePlanet()
+                   self.updatePeople()
                     return
             }
             
@@ -105,7 +105,7 @@ class PeopleViewController: UIViewController {
     
     @IBAction func randPlanet(sender: AnyObject) {
         
-        updatePlanet()
+        updatePeople()
         
     }
     
@@ -130,14 +130,14 @@ class PeopleViewController: UIViewController {
         print("1")
     
         session.dataTaskWithURL(url, completionHandler: { ( data: NSData?, response: NSURLResponse?, error: NSError?) -> Void in
-            // Make sure we get an OK response
+            
             guard let realResponse = response as? NSHTTPURLResponse where
                 realResponse.statusCode == 200 else {
                     print("Not a 200 response")
                     return
             }
              print("2")
-            // Read the JSON
+           
             dispatch_async(dispatch_get_main_queue(), {
                 
                 do {
