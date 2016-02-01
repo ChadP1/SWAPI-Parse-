@@ -11,19 +11,20 @@ import Foundation
 class Theme {
     
     private var _num = 0
+    
    
     var num: Int {
         return _num
     }
     
+    
     func increment(){
-        +num++
+        _num++
     }
     
-    func checkBool(currentNum: Int) ->Bool{
-         if self._num % 2 == 0 {
-         return true 
-        }
+    func reset(){
+        _num = 0 
     }
+
     
 }

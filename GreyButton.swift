@@ -11,10 +11,11 @@ import UIKit
 class GreyButton: UIButton {
 
     override func awakeFromNib() {
-        self.layer.cornerRadius = 5.0
+        self.layer.cornerRadius = 10.0
         backgroundColor = UIColor(red: 135.0/255, green: 135.0/255, blue: 135.0/255, alpha: 1)
         
         setTitleColor(UIColor.whiteColor(), forState: .Normal)
+        //self.layer.frame(CGRect(x: 0, y: 0, width: 44, height: 44))
     }
 
 }

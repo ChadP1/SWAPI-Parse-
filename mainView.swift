@@ -19,10 +19,10 @@ class mainViewController: UIViewController {
   //  var sfxBB83: AVAudioPlayer!
     
     var soundSFX: SoundViewController!
-    var num = 0 
+    var num = Theme()
     override func viewDidLoad() {
         super.viewDidLoad()
-        playNoise()
+      
         
         
       /*  do {
@@ -41,6 +41,47 @@ class mainViewController: UIViewController {
             print(err.debugDescription)
         }
         
+        
+        func playNoise() {
+        
+        print(1)
+        var sfxBB81: AVAudioPlayer!
+        var sfxBB2: AVAudioPlayer!
+        var sfxBB83: AVAudioPlayer!
+        
+        do {
+        print(2)
+        try sfxBB81 = AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("BB81", ofType: "wav")!))
+        try sfxBB2 = AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("BB2", ofType: "wav")!))
+        try sfxBB83 = AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("BB83", ofType: "wav")!))
+        
+        sfxBB81.prepareToPlay()
+        sfxBB2.prepareToPlay()
+        sfxBB83.prepareToPlay()
+        
+        
+        
+        } catch let err as NSError {
+        print(err.debugDescription)
+        }
+        print(5)
+        
+        let rand = arc4random_uniform(3)
+        print(rand)
+        if rand == 0 {
+        
+        sfxBB81.play()
+        print(6)
+        } else if rand == 1 {
+        sfxBB2.play()
+        } else if rand == 2 {
+        sfxBB83.play()
+        }
+
+        
+        
+        }
+        
         */
         
        
@@ -49,70 +90,24 @@ class mainViewController: UIViewController {
     
     @IBAction func noiseOnButton(sender: AnyObject) {
         
-        
-       playNoise()
-      // soundSFX.playNoise()
-        
     }
     
-    
-    func playNoise() {
-        
-        print(1)
-        var sfxBB81: AVAudioPlayer!
-        var sfxBB2: AVAudioPlayer!
-        var sfxBB83: AVAudioPlayer!
-        
-        do {
-         print(2)
-            try sfxBB81 = AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("BB81", ofType: "wav")!))
-            try sfxBB2 = AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("BB2", ofType: "wav")!))
-            try sfxBB83 = AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("BB83", ofType: "wav")!))
-            
-            sfxBB81.prepareToPlay()
-            sfxBB2.prepareToPlay()
-            sfxBB83.prepareToPlay()
-            
-            
-            
-        } catch let err as NSError {
-            print(err.debugDescription)
-        }
-        print(5)
-        
-        let rand = arc4random_uniform(3)
-        print(rand)
-        if rand == 0 {
-            
-            sfxBB81.play()
-        print(6)
-        } else if rand == 1 {
-            sfxBB2.play()
-        } else if rand == 2 {
-            sfxBB83.play()
-        }
-        
-        
-        
-    }
-
     
     @IBAction func droidChangePress(sender: AnyObject) {
         
         
-        print(num)
+       reloadInputViews()
 
-        if num % 2 == 0 {
-        num++
+        if num.num % 2 == 0 {
         bbImage.hidden = true
         r2Image.hidden = false
         } else {
-        num++
             bbImage.hidden = false
             r2Image.hidden = true
             
         }
-     
+     num.increment()
+        print(num.num)
     }
     
     
