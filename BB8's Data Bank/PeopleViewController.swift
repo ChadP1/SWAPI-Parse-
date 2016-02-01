@@ -20,16 +20,15 @@ class PeopleViewController: UIViewController {
     @IBOutlet weak var hLbl: UILabel!
     @IBOutlet weak var heightLbl: UILabel!
   
-    
-    
-    
-    
-    
-    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+         updatePeople()
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        updatePeople()
+       
         
     }
     

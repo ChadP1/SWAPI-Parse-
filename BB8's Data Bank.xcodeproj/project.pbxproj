@@ -24,6 +24,7 @@
 		6C707FA61C497FED00FE387A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C707FA41C497FED00FE387A /* Main.storyboard */; };
 		6C707FA81C497FED00FE387A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C707FA71C497FED00FE387A /* Assets.xcassets */; };
 		6C707FAB1C497FED00FE387A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C707FA91C497FED00FE387A /* LaunchScreen.storyboard */; };
+		6C9601091C5FB56F00D117F9 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9601081C5FB56F00D117F9 /* Theme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		6C707FA71C497FED00FE387A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C707FAA1C497FED00FE387A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6C707FAC1C497FED00FE387A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C9601081C5FB56F00D117F9 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 				6C707FAC1C497FED00FE387A /* Info.plist */,
 				6C2699BC1C58B71600DE5924 /* GreyButton.swift */,
 				6C2699BA1C58B40D00DE5924 /* OrangeButton.swift */,
+				6C9601081C5FB56F00D117F9 /* Theme.swift */,
 			);
 			path = "BB8's Data Bank";
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 				6C3431201C57274000DA5BCE /* mainView.swift in Sources */,
 				6C51EA2C1C50ADC1003C8206 /* VehicleViewController.swift in Sources */,
 				6C2699BD1C58B71600DE5924 /* GreyButton.swift in Sources */,
+				6C9601091C5FB56F00D117F9 /* Theme.swift in Sources */,
 				6C707FA11C497FED00FE387A /* AppDelegate.swift in Sources */,
 				6C3431081C56910A00DA5BCE /* SpeciesViewController.swift in Sources */,
 				6C34310A1C56959C00DA5BCE /* WookieViewController.swift in Sources */,

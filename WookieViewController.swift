@@ -20,14 +20,15 @@ class WookieViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
         populateLabels()
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     
@@ -41,9 +42,6 @@ class WookieViewController: UIViewController {
         let session = NSURLSession.sharedSession()
         print(wookie)
         let url = NSURL(string: wookie)!
-        
-        
-        
         
         session.dataTaskWithURL(url, completionHandler: { (data: NSData?, response: NSURLResponse?, error: NSError?) -> Void in
             guard let realResponse = response as? NSHTTPURLResponse where

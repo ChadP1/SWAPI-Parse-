@@ -12,12 +12,14 @@ import AVFoundation
 
 class mainViewController: UIViewController {
     
+    @IBOutlet weak var bbImage: UIImageView!
+    @IBOutlet weak var r2Image: UIImageView!
   //  var sfxBB81: AVAudioPlayer!
   //  var sfxBB2: AVAudioPlayer!
   //  var sfxBB83: AVAudioPlayer!
     
     var soundSFX: SoundViewController!
-    
+    var num = 0 
     override func viewDidLoad() {
         super.viewDidLoad()
         playNoise()
@@ -95,7 +97,45 @@ class mainViewController: UIViewController {
     }
 
     
+    @IBAction func droidChangePress(sender: AnyObject) {
+        
+        
+        print(num)
+
+        if num % 2 == 0 {
+        num++
+        bbImage.hidden = true
+        r2Image.hidden = false
+        } else {
+        num++
+            bbImage.hidden = false
+            r2Image.hidden = true
+            
+        }
+     
+    }
     
     
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

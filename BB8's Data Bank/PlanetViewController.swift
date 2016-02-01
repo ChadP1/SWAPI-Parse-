@@ -21,13 +21,12 @@ class PlanetViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        updatePlanet()
-       
+
       
     }
-    
+    override func viewWillAppear(animated: Bool) {
+        updatePlanet()
+    }
     
  
     func updatePlanet() {

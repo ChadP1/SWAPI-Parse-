@@ -24,14 +24,17 @@ class ShipsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        populateLabels()
+      
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
-
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        populateLabels()
+    }
 
     func populateLabels() {
         
