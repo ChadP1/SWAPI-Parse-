@@ -12,6 +12,7 @@ import AVFoundation
 
 class mainViewController: UIViewController {
     
+    @IBOutlet weak var starImage: UIImageView!
     @IBOutlet weak var bbImage: UIImageView!
     @IBOutlet weak var r2Image: UIImageView!
   //  var sfxBB81: AVAudioPlayer!
@@ -20,6 +21,7 @@ class mainViewController: UIViewController {
     
     var soundSFX: SoundViewController!
     var num = Theme()
+    var reloaded = OrangeButton()
     override func viewDidLoad() {
         super.viewDidLoad()
       
@@ -97,17 +99,26 @@ class mainViewController: UIViewController {
         
         
        reloadInputViews()
-
-        if num.num % 2 == 0 {
-        bbImage.hidden = true
-        r2Image.hidden = false
-        } else {
+        if num.num == 0 {
+            starImage.hidden = true
             bbImage.hidden = false
             r2Image.hidden = true
-            
+           num.increment()
+        }else if num.num == 1 {
+        starImage.hidden = true
+        bbImage.hidden = true
+        r2Image.hidden = false
+        num.increment()
+        } else if num.num == 2 {
+            bbImage.hidden = true
+            r2Image.hidden = true
+            starImage.hidden = false
+            num.increment()
         }
-     num.increment()
         print(num.num)
+        if num.num >= 3 {
+     num.reset()
+        }
     }
     
     

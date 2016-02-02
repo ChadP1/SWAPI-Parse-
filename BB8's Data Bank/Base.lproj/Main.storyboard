@@ -152,94 +152,94 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="42" translatesAutoresizingMaskIntoConstraints="NO" id="AAM-9H-QGd">
-                                <rect key="frame" x="162" y="65" width="276" height="470"/>
+                                <rect key="frame" x="162" y="65" width="276" height="469.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="2bu-y3-UAj">
-                                        <rect key="frame" x="68" y="0.0" width="140" height="348"/>
+                                        <rect key="frame" x="68" y="0.0" width="140" height="347.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="R4f-Qs-0yK">
-                                                <rect key="frame" x="0.0" y="0.0" width="140" height="348"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="140" height="347.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9UG-g6-Lud">
-                                                        <rect key="frame" x="43" y="0.0" width="55" height="21"/>
+                                                        <rect key="frame" x="43" y="0.0" width="54.5" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.74873310810810811" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nameLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5sk-cT-GJa">
-                                                        <rect key="frame" x="25" y="26" width="90" height="21"/>
+                                                        <rect key="frame" x="25" y="25" width="90" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Model:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WqY-72-vr5">
-                                                        <rect key="frame" x="44" y="51" width="53" height="21"/>
+                                                        <rect key="frame" x="44" y="51" width="52.5" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.7469119510135136" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="modelLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rKF-9q-6C5">
-                                                        <rect key="frame" x="23" y="77" width="96" height="21"/>
+                                                        <rect key="frame" x="22" y="76" width="95.5" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Manufacturer:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zB3-zy-ViM">
-                                                        <rect key="frame" x="16" y="102" width="108" height="21"/>
+                                                        <rect key="frame" x="16" y="102" width="108" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.7484955658783784" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="manuLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4iU-Ys-JR7">
-                                                        <rect key="frame" x="35" y="128" width="71" height="16"/>
+                                                        <rect key="frame" x="34" y="127" width="71" height="16"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cost in Credits:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vrz-AY-UEO">
-                                                        <rect key="frame" x="12" y="149" width="118" height="21"/>
+                                                        <rect key="frame" x="11" y="148" width="117.5" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.7539854307432432" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="costLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ys4-AG-rqa">
-                                                        <rect key="frame" x="30" y="174" width="81" height="21"/>
+                                                        <rect key="frame" x="30" y="174" width="80.5" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Crew:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F89-Pa-5GG">
-                                                        <rect key="frame" x="48" y="200" width="45" height="21"/>
+                                                        <rect key="frame" x="48" y="199" width="44.5" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.75021114864864868" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="crewLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wCf-5D-ZFE">
-                                                        <rect key="frame" x="28" y="225" width="85" height="21"/>
+                                                        <rect key="frame" x="27" y="225" width="85" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Passengers:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tb9-Yg-xG1">
-                                                        <rect key="frame" x="24" y="251" width="94" height="21"/>
+                                                        <rect key="frame" x="23" y="250" width="93.5" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.74749260979729726" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PassengersLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sB2-Ht-Zae">
-                                                        <rect key="frame" x="0.0" y="276" width="140" height="21"/>
+                                                        <rect key="frame" x="0.0" y="276" width="140" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Class:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kkr-AK-Eo7">
-                                                        <rect key="frame" x="47" y="302" width="47" height="21"/>
+                                                        <rect key="frame" x="47" y="301" width="46.5" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.74873310810810811" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ClassLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UQ5-cL-DVl">
-                                                        <rect key="frame" x="26" y="327" width="90" height="21"/>
+                                                        <rect key="frame" x="25" y="327" width="89.5" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -249,10 +249,20 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mzL-Wc-ogm">
-                                        <rect key="frame" x="0.0" y="390" width="276" height="80"/>
+                                        <rect key="frame" x="0.0" y="389" width="276" height="80"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8d1-mk-3qY" customClass="OrangeButton" customModule="BB8_s_Data_Bank" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uoO-as-cur" customClass="GreyButton" customModule="BB8_s_Data_Bank" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="276" height="35"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                <state key="normal" title="Access new ship file">
+                                                    <color key="titleColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="newShipButton:" destination="aXj-T7-AKv" eventType="touchUpInside" id="PXc-bx-J28"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8d1-mk-3qY" customClass="OrangeButton" customModule="BB8_s_Data_Bank" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="45" width="276" height="35"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="276" id="T7j-UL-Ykf"/>
                                                     <constraint firstAttribute="height" constant="35" id="da7-VA-T4t"/>
@@ -263,16 +273,6 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="returnToMain:" destination="aXj-T7-AKv" eventType="touchUpInside" id="tO4-IC-HRM"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uoO-as-cur" customClass="GreyButton" customModule="BB8_s_Data_Bank" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="45" width="276" height="35"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                                <state key="normal" title="Access new ship file">
-                                                    <color key="titleColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="newShipButton:" destination="aXj-T7-AKv" eventType="touchUpInside" id="PXc-bx-J28"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -312,10 +312,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="R2D2" translatesAutoresizingMaskIntoConstraints="NO" id="Gff-y5-Oql">
-                                <rect key="frame" x="79" y="314" width="423" height="266"/>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stardestroy" translatesAutoresizingMaskIntoConstraints="NO" id="ut9-SF-uKV">
+                                <rect key="frame" x="184" y="314" width="240" height="278"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="278" id="K6m-Zy-AOL"/>
+                                    <constraint firstAttribute="width" constant="240" id="zuQ-uk-SPb"/>
+                                </constraints>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="r2d2image" translatesAutoresizingMaskIntoConstraints="NO" id="Gff-y5-Oql">
+                                <rect key="frame" x="89" y="314" width="423" height="266"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="423" id="0GO-Lb-vlW"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="423" id="5q9-dj-9Ag"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="266" id="QwJ-Aq-qUJ"/>
                                     <constraint firstAttribute="height" constant="266" id="nNb-Bj-GK5"/>
                                 </constraints>
                             </imageView>
@@ -427,11 +436,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="T1a-8l-96c" firstAttribute="top" secondItem="V9a-H7-O4r" secondAttribute="bottom" constant="8" id="0fj-18-RoF"/>
-                            <constraint firstItem="Gff-y5-Oql" firstAttribute="centerX" secondItem="oME-bt-fvt" secondAttribute="centerX" constant="-9.5" id="USg-oP-9Qw"/>
+                            <constraint firstItem="ut9-SF-uKV" firstAttribute="top" secondItem="V9a-H7-O4r" secondAttribute="bottom" constant="8" id="CC6-TF-QKA"/>
+                            <constraint firstItem="Gff-y5-Oql" firstAttribute="centerX" secondItem="oME-bt-fvt" secondAttribute="centerX" constant="0.5" id="USg-oP-9Qw"/>
                             <constraint firstItem="F43-0f-HC7" firstAttribute="centerX" secondItem="oME-bt-fvt" secondAttribute="centerX" id="bYU-Pu-gAy"/>
                             <constraint firstItem="Gff-y5-Oql" firstAttribute="top" secondItem="V9a-H7-O4r" secondAttribute="bottom" constant="8" id="d6N-Ak-f1J"/>
                             <constraint firstItem="V9a-H7-O4r" firstAttribute="centerX" secondItem="oME-bt-fvt" secondAttribute="centerX" constant="0.5" id="e6H-1y-M9T"/>
                             <constraint firstItem="V9a-H7-O4r" firstAttribute="centerY" secondItem="oME-bt-fvt" secondAttribute="centerY" constant="-108" id="eI4-ef-44y"/>
+                            <constraint firstItem="ut9-SF-uKV" firstAttribute="centerX" secondItem="oME-bt-fvt" secondAttribute="centerX" constant="4" id="wmD-FC-F1q"/>
                             <constraint firstItem="F43-0f-HC7" firstAttribute="top" secondItem="V9a-H7-O4r" secondAttribute="bottom" constant="8" id="yfI-Zl-2mH"/>
                             <constraint firstItem="T1a-8l-96c" firstAttribute="centerX" secondItem="oME-bt-fvt" secondAttribute="centerX" constant="4.5" id="zM7-sa-hcy"/>
                         </constraints>
@@ -439,6 +450,7 @@
                     <connections>
                         <outlet property="bbImage" destination="F43-0f-HC7" id="z2F-5B-mzC"/>
                         <outlet property="r2Image" destination="Gff-y5-Oql" id="dlZ-sF-cQm"/>
+                        <outlet property="starImage" destination="ut9-SF-uKV" id="dkk-28-Kgm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="53p-d7-bRG" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1095,7 +1107,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="R2D2" width="612" height="792"/>
         <image name="bb8image-1" width="640" height="2208"/>
+        <image name="r2d2image" width="352" height="466"/>
+        <image name="stardestroy" width="414" height="549"/>
     </resources>
 </document>
