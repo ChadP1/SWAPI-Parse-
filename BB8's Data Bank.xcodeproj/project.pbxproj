@@ -9,6 +9,15 @@
 /* Begin PBXBuildFile section */
 		6C2699BB1C58B40D00DE5924 /* OrangeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2699BA1C58B40D00DE5924 /* OrangeButton.swift */; };
 		6C2699BD1C58B71600DE5924 /* GreyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2699BC1C58B71600DE5924 /* GreyButton.swift */; };
+		6C32D9981C68FEC400080BA7 /* peopleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C32D9971C68FEC400080BA7 /* peopleModel.swift */; };
+		6C32D9D31C69B02700080BA7 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C32D9D11C69B02700080BA7 /* Interface.storyboard */; };
+		6C32D9D51C69B02700080BA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C32D9D41C69B02700080BA7 /* Assets.xcassets */; };
+		6C32D9DC1C69B02700080BA7 /* BB8chrono Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6C32D9DB1C69B02700080BA7 /* BB8chrono Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6C32D9E31C69B02700080BA7 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C32D9E21C69B02700080BA7 /* InterfaceController.swift */; };
+		6C32D9E51C69B02700080BA7 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C32D9E41C69B02700080BA7 /* ExtensionDelegate.swift */; };
+		6C32D9E71C69B02700080BA7 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C32D9E61C69B02700080BA7 /* NotificationController.swift */; };
+		6C32D9E91C69B02700080BA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C32D9E81C69B02700080BA7 /* Assets.xcassets */; };
+		6C32D9ED1C69B02700080BA7 /* BB8chrono.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 6C32D9CF1C69B02700080BA7 /* BB8chrono.app */; };
 		6C3431081C56910A00DA5BCE /* SpeciesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3431071C56910A00DA5BCE /* SpeciesViewController.swift */; };
 		6C34310A1C56959C00DA5BCE /* WookieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3431091C56959C00DA5BCE /* WookieViewController.swift */; };
 		6C34311A1C5726A200DA5BCE /* BB83.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6C3431191C5726A200DA5BCE /* BB83.wav */; };
@@ -27,9 +36,63 @@
 		6C9601091C5FB56F00D117F9 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9601081C5FB56F00D117F9 /* Theme.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		6C32D9DD1C69B02700080BA7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C707F951C497FED00FE387A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C32D9DA1C69B02700080BA7;
+			remoteInfo = "BB8chrono Extension";
+		};
+		6C32D9EB1C69B02700080BA7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C707F951C497FED00FE387A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C32D9CE1C69B02700080BA7;
+			remoteInfo = BB8chrono;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6C32D9F31C69B02700080BA7 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6C32D9DC1C69B02700080BA7 /* BB8chrono Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C32D9F51C69B02700080BA7 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				6C32D9ED1C69B02700080BA7 /* BB8chrono.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		6C2699BA1C58B40D00DE5924 /* OrangeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrangeButton.swift; sourceTree = "<group>"; };
 		6C2699BC1C58B71600DE5924 /* GreyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GreyButton.swift; path = ../GreyButton.swift; sourceTree = "<group>"; };
+		6C32D9971C68FEC400080BA7 /* peopleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = peopleModel.swift; sourceTree = "<group>"; };
+		6C32D9CF1C69B02700080BA7 /* BB8chrono.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BB8chrono.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C32D9D21C69B02700080BA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		6C32D9D41C69B02700080BA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6C32D9D61C69B02700080BA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C32D9DB1C69B02700080BA7 /* BB8chrono Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "BB8chrono Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C32D9E11C69B02700080BA7 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		6C32D9E21C69B02700080BA7 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		6C32D9E41C69B02700080BA7 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		6C32D9E61C69B02700080BA7 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		6C32D9E81C69B02700080BA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6C32D9EA1C69B02700080BA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6C3431071C56910A00DA5BCE /* SpeciesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SpeciesViewController.swift; path = ../SpeciesViewController.swift; sourceTree = "<group>"; };
 		6C3431091C56959C00DA5BCE /* WookieViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WookieViewController.swift; path = ../WookieViewController.swift; sourceTree = "<group>"; };
 		6C3431191C5726A200DA5BCE /* BB83.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = BB83.wav; sourceTree = "<group>"; };
@@ -51,6 +114,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		6C32D9D81C69B02700080BA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6C707F9A1C497FED00FE387A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -61,10 +131,77 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6C32D9951C68FE9900080BA7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6C34311F1C57274000DA5BCE /* mainView.swift */,
+				6C707FA21C497FED00FE387A /* PlanetViewController.swift */,
+				6C51EA051C4EEB58003C8206 /* PeopleViewController.swift */,
+				6C51EA291C502C1F003C8206 /* ShipsViewController.swift */,
+				6C3431071C56910A00DA5BCE /* SpeciesViewController.swift */,
+				6C51EA2B1C50ADC1003C8206 /* VehicleViewController.swift */,
+				6C3431091C56959C00DA5BCE /* WookieViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		6C32D9961C68FEB100080BA7 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				6C32D9971C68FEC400080BA7 /* peopleModel.swift */,
+				6C9601081C5FB56F00D117F9 /* Theme.swift */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		6C32D9991C68FECE00080BA7 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				6C3431211C57D5D200DA5BCE /* sounds.swift */,
+				6C34311D1C5726D400DA5BCE /* BB81.wav */,
+				6C34311B1C5726D000DA5BCE /* BB2.wav */,
+				6C3431191C5726A200DA5BCE /* BB83.wav */,
+			);
+			name = assets;
+			sourceTree = "<group>";
+		};
+		6C32D9D01C69B02700080BA7 /* BB8chrono */ = {
+			isa = PBXGroup;
+			children = (
+				6C32D9D11C69B02700080BA7 /* Interface.storyboard */,
+				6C32D9D41C69B02700080BA7 /* Assets.xcassets */,
+				6C32D9D61C69B02700080BA7 /* Info.plist */,
+			);
+			path = BB8chrono;
+			sourceTree = "<group>";
+		};
+		6C32D9DF1C69B02700080BA7 /* BB8chrono Extension */ = {
+			isa = PBXGroup;
+			children = (
+				6C32D9E21C69B02700080BA7 /* InterfaceController.swift */,
+				6C32D9E41C69B02700080BA7 /* ExtensionDelegate.swift */,
+				6C32D9E61C69B02700080BA7 /* NotificationController.swift */,
+				6C32D9E81C69B02700080BA7 /* Assets.xcassets */,
+				6C32D9EA1C69B02700080BA7 /* Info.plist */,
+				6C32D9E01C69B02700080BA7 /* Supporting Files */,
+			);
+			path = "BB8chrono Extension";
+			sourceTree = "<group>";
+		};
+		6C32D9E01C69B02700080BA7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6C32D9E11C69B02700080BA7 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		6C707F941C497FED00FE387A = {
 			isa = PBXGroup;
 			children = (
 				6C707F9F1C497FED00FE387A /* BB8's Data Bank */,
+				6C32D9D01C69B02700080BA7 /* BB8chrono */,
+				6C32D9DF1C69B02700080BA7 /* BB8chrono Extension */,
 				6C707F9E1C497FED00FE387A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -73,6 +210,8 @@
 			isa = PBXGroup;
 			children = (
 				6C707F9D1C497FED00FE387A /* BB8's Data Bank.app */,
+				6C32D9CF1C69B02700080BA7 /* BB8chrono.app */,
+				6C32D9DB1C69B02700080BA7 /* BB8chrono Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -80,25 +219,16 @@
 		6C707F9F1C497FED00FE387A /* BB8's Data Bank */ = {
 			isa = PBXGroup;
 			children = (
+				6C32D9991C68FECE00080BA7 /* assets */,
+				6C32D9961C68FEB100080BA7 /* model */,
+				6C32D9951C68FE9900080BA7 /* Controllers */,
 				6C707FA01C497FED00FE387A /* AppDelegate.swift */,
-				6C34311F1C57274000DA5BCE /* mainView.swift */,
-				6C707FA21C497FED00FE387A /* PlanetViewController.swift */,
-				6C51EA051C4EEB58003C8206 /* PeopleViewController.swift */,
-				6C51EA291C502C1F003C8206 /* ShipsViewController.swift */,
-				6C3431071C56910A00DA5BCE /* SpeciesViewController.swift */,
-				6C51EA2B1C50ADC1003C8206 /* VehicleViewController.swift */,
-				6C3431091C56959C00DA5BCE /* WookieViewController.swift */,
-				6C3431211C57D5D200DA5BCE /* sounds.swift */,
-				6C34311D1C5726D400DA5BCE /* BB81.wav */,
-				6C34311B1C5726D000DA5BCE /* BB2.wav */,
-				6C3431191C5726A200DA5BCE /* BB83.wav */,
 				6C707FA41C497FED00FE387A /* Main.storyboard */,
 				6C707FA71C497FED00FE387A /* Assets.xcassets */,
 				6C707FA91C497FED00FE387A /* LaunchScreen.storyboard */,
 				6C707FAC1C497FED00FE387A /* Info.plist */,
 				6C2699BC1C58B71600DE5924 /* GreyButton.swift */,
 				6C2699BA1C58B40D00DE5924 /* OrangeButton.swift */,
-				6C9601081C5FB56F00D117F9 /* Theme.swift */,
 			);
 			path = "BB8's Data Bank";
 			sourceTree = "<group>";
@@ -106,6 +236,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		6C32D9CE1C69B02700080BA7 /* BB8chrono */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C32D9F41C69B02700080BA7 /* Build configuration list for PBXNativeTarget "BB8chrono" */;
+			buildPhases = (
+				6C32D9CD1C69B02700080BA7 /* Resources */,
+				6C32D9F31C69B02700080BA7 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6C32D9DE1C69B02700080BA7 /* PBXTargetDependency */,
+			);
+			name = BB8chrono;
+			productName = BB8chrono;
+			productReference = 6C32D9CF1C69B02700080BA7 /* BB8chrono.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		6C32D9DA1C69B02700080BA7 /* BB8chrono Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C32D9F21C69B02700080BA7 /* Build configuration list for PBXNativeTarget "BB8chrono Extension" */;
+			buildPhases = (
+				6C32D9D71C69B02700080BA7 /* Sources */,
+				6C32D9D81C69B02700080BA7 /* Frameworks */,
+				6C32D9D91C69B02700080BA7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BB8chrono Extension";
+			productName = "BB8chrono Extension";
+			productReference = 6C32D9DB1C69B02700080BA7 /* BB8chrono Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		6C707F9C1C497FED00FE387A /* BB8's Data Bank */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6C707FAF1C497FED00FE387A /* Build configuration list for PBXNativeTarget "BB8's Data Bank" */;
@@ -113,10 +277,12 @@
 				6C707F991C497FED00FE387A /* Sources */,
 				6C707F9A1C497FED00FE387A /* Frameworks */,
 				6C707F9B1C497FED00FE387A /* Resources */,
+				6C32D9F51C69B02700080BA7 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				6C32D9EC1C69B02700080BA7 /* PBXTargetDependency */,
 			);
 			name = "BB8's Data Bank";
 			productName = "BB8's Data Bank";
@@ -133,6 +299,12 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "chad parr";
 				TargetAttributes = {
+					6C32D9CE1C69B02700080BA7 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					6C32D9DA1C69B02700080BA7 = {
+						CreatedOnToolsVersion = 7.2;
+					};
 					6C707F9C1C497FED00FE387A = {
 						CreatedOnToolsVersion = 7.2;
 					};
@@ -152,11 +324,30 @@
 			projectRoot = "";
 			targets = (
 				6C707F9C1C497FED00FE387A /* BB8's Data Bank */,
+				6C32D9CE1C69B02700080BA7 /* BB8chrono */,
+				6C32D9DA1C69B02700080BA7 /* BB8chrono Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		6C32D9CD1C69B02700080BA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C32D9D51C69B02700080BA7 /* Assets.xcassets in Resources */,
+				6C32D9D31C69B02700080BA7 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C32D9D91C69B02700080BA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C32D9E91C69B02700080BA7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6C707F9B1C497FED00FE387A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -173,6 +364,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		6C32D9D71C69B02700080BA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C32D9E71C69B02700080BA7 /* NotificationController.swift in Sources */,
+				6C32D9E51C69B02700080BA7 /* ExtensionDelegate.swift in Sources */,
+				6C32D9E31C69B02700080BA7 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6C707F991C497FED00FE387A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -188,13 +389,35 @@
 				6C51EA2A1C502C1F003C8206 /* ShipsViewController.swift in Sources */,
 				6C3431221C57D5D200DA5BCE /* sounds.swift in Sources */,
 				6C51EA061C4EEB58003C8206 /* PeopleViewController.swift in Sources */,
+				6C32D9981C68FEC400080BA7 /* peopleModel.swift in Sources */,
 				6C2699BB1C58B40D00DE5924 /* OrangeButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		6C32D9DE1C69B02700080BA7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6C32D9DA1C69B02700080BA7 /* BB8chrono Extension */;
+			targetProxy = 6C32D9DD1C69B02700080BA7 /* PBXContainerItemProxy */;
+		};
+		6C32D9EC1C69B02700080BA7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6C32D9CE1C69B02700080BA7 /* BB8chrono */;
+			targetProxy = 6C32D9EB1C69B02700080BA7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		6C32D9D11C69B02700080BA7 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6C32D9D21C69B02700080BA7 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		6C707FA41C497FED00FE387A /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -214,6 +437,66 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		6C32D9EE1C69B02700080BA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = BB8chrono_Extension;
+				INFOPLIST_FILE = BB8chrono/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "ThatchedRoof.BB8-s-Data-Bank.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		6C32D9EF1C69B02700080BA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = BB8chrono_Extension;
+				INFOPLIST_FILE = BB8chrono/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "ThatchedRoof.BB8-s-Data-Bank.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		6C32D9F01C69B02700080BA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "BB8chrono Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ThatchedRoof.BB8-s-Data-Bank.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		6C32D9F11C69B02700080BA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "BB8chrono Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ThatchedRoof.BB8-s-Data-Bank.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
 		6C707FAD1C497FED00FE387A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -324,6 +607,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		6C32D9F21C69B02700080BA7 /* Build configuration list for PBXNativeTarget "BB8chrono Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C32D9F01C69B02700080BA7 /* Debug */,
+				6C32D9F11C69B02700080BA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6C32D9F41C69B02700080BA7 /* Build configuration list for PBXNativeTarget "BB8chrono" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C32D9EE1C69B02700080BA7 /* Debug */,
+				6C32D9EF1C69B02700080BA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		6C707F981C497FED00FE387A /* Build configuration list for PBXProject "BB8's Data Bank" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

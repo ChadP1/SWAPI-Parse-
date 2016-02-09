@@ -82,12 +82,12 @@ class SpeciesViewController: UIViewController {
                         }
                         if  let height = json["average_height"] as? String {
                             
-                            self.heightLbl.text = height
+                            self.heightLbl.text = height + " cm"
                             print(height)
                         }
                         if  let life = json["average_lifespan"] as? String {
                             
-                            self.lifespanLbl.text = life
+                            self.lifespanLbl.text = life + " years"
                             print(life)
                         }
                         if  let lang = json["language"] as? String {

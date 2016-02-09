@@ -70,7 +70,7 @@ class PeopleViewController: UIViewController {
                             print(genderType)                             }
                         if  let height = jsonDictionary["height"] as? String {
                             
-                            self.heightLbl.text = height
+                            self.heightLbl.text = "\(height) cm"
                             print(height)
                         }
                         if  let eyeColor = jsonDictionary["eye_color"] as? String {
@@ -85,7 +85,7 @@ class PeopleViewController: UIViewController {
                         }
                         if  let mass = jsonDictionary["mass"] as? String {
             
-                            self.starshipLbl.text = mass
+                            self.starshipLbl.text = mass + " kg"
                         }
                     if  let hair = jsonDictionary["hair_color"] as? String {
                         

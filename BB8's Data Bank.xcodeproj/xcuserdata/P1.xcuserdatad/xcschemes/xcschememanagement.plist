@@ -9,9 +9,24 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>BB8chrono.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>Notification - BB8chrono.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>6C32D9CE1C69B02700080BA7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>6C707F9C1C497FED00FE387A</key>
 		<dict>
 			<key>primary</key>
